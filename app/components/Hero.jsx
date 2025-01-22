@@ -6,11 +6,12 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
+import Link from "next/link";
 
-// data source
+/*-------------------------------- Hero data --------------------------------------*/
 const items = [
     {
-        title: 'আপনার আস্থার সঙ্গী, সারা বিশ্বে',
+        title: 'বিশ্বাসের হাত ধরে, আমরা বিশ্বজুড়ে!',
         subtitle: 'ভিসা সহায়তা, বেসামরিক বিমান চলাচল এবং IATA সনদ পেতে আমাদের সেবা নিন',
         imgURL: 'img01.jpg'
     },
@@ -49,9 +50,18 @@ const Hero = () => {
                             alt={`Slide ${index + 1}`}
                             className="w-full h-full object-cover"
                         />
-                        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-center text-white p-4">
-                            <h2 className="text-6xl font-bold mb-2 glowing-title">{item.title}</h2>
-                            <p className="text-2xl glowing-subtitle">{item.subtitle}</p>
+                        <div
+                            className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-30 text-center text-white p-4">
+                            <div className="absolute">
+                                <h2 className="text-6xl font-bold mb-2 glowing-title">{item.title}</h2>
+                                <br/>
+                                <Link href='#'>
+                                    <button
+                                        className="cta-button px-8 py-4 bg-[#f67c93] text-white rounded-lg font-semibold text-lg transform hover:scale-105 transition-transform duration-300">
+                                        make an appointment
+                                    </button>
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </SwiperSlide>

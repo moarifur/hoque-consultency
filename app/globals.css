@@ -21,9 +21,66 @@ body {
 }
 
 .glowing-title {
-  text-shadow: 0 0 10px #fff, 0 0 20px #ff6c6c, 0 0 30px #ff6c6c, 0 0 40px #ff6c6c;
+  text-shadow: 0 0 8px #fff, 0 0 12px #4fc3f7, 0 0 20px #4fc3f7;
 }
 
 .glowing-subtitle {
-  text-shadow: 0 0 8px #fff, 0 0 12px #4fc3f7, 0 0 20px #4fc3f7;
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff6c6c, 0 0 30px #ff6c6c, 0 0 40px #ff6c6c;
 }
+
+.cta-button {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.1), rgba(255,255,255,0.3), rgba(255,255,255,0.1));
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.cta-button:hover::before {
+  left: 100%;
+}
+
+.cta-button:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.1);
+}
+
+/*.cta-button-wrapper {*/
+/*  position: absolute;     !* Ensures the wrapper is at the bottom *!*/
+/*  bottom: 10px;           !* Spaced 10px from the bottom *!*/
+/*  left: 0;                !* Full width *!*/
+/*  right: 0;*/
+/*  opacity: 0;             !* Initially hidden *!*/
+/*  pointer-events: none;   !* Disabled until visible *!*/
+/*  transition: opacity 1s ease;*/
+/*}*/
+
+/*.cta-button-wrapper.animate-fadeIn {*/
+/*  opacity: 1;             !* Appears with fade-in effect *!*/
+/*  pointer-events: all;    !* Button becomes clickable *!*/
+/*}*/
+
+/*.cta-button {*/
+/*  padding: 16px 32px;*/
+/*  background-color: #2563EB;*/
+/*  color: white;*/
+/*  border-radius: 12px;*/
+/*  font-weight: 600;*/
+/*  font-size: 18px;*/
+/*  text-transform: uppercase;*/
+/*  transition: transform 0.3s ease;*/
+/*}*/
+
+/*.cta-button:hover {*/
+/*  transform: scale(1.05); !* Grows when hovered *!*/
+/*}*/
