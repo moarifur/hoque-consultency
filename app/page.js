@@ -1,10 +1,10 @@
 import React from 'react';
+import Hero from "@/app/components/Hero";
 
 const Page = () => {
     return (
-        <div className="h-screen mt-16">
-            Home Page
-
+        <div className="">
+            <Hero />
         </div>
     );
 };

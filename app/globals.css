@@ -20,6 +20,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#contact{
+.glowing-title {
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff6c6c, 0 0 30px #ff6c6c, 0 0 40px #ff6c6c;
+}
 
+.glowing-subtitle {
+  text-shadow: 0 0 8px #fff, 0 0 12px #4fc3f7, 0 0 20px #4fc3f7;
 }
