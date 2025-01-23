@@ -12,6 +12,10 @@ const logo = "/logo.png"
 // Nav link
 const navLinks = [
     {
+        title: 'Home',
+        link: '/'
+    },
+    {
         title: 'About',
         link: '/about'
     },

@@ -1,10 +1,9 @@
-import React from 'react';
-import Hero from "@/app/components/Hero";
+import HomePage from "@/app/Home/HomePage";
 
 const Page = () => {
     return (
         <div className="">
-            <Hero />
+            <HomePage/>
         </div>
     );
 };

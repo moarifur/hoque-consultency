@@ -17,6 +17,9 @@ export default {
           '100%': { opacity: '1' },
         },
       },
+      listStyleType: {
+        circle: 'circle',
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
