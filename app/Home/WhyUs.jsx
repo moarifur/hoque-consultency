@@ -24,7 +24,7 @@ const items = [
 const WhyUs = () => {
     return (
         <div
-            className="-mt-52 flex items-center justify-center gap-20 h-[30vh] md:h-[60vh] bg-cover bg-slate-50">
+            className="flex items-center justify-center gap-20 h-[30vh] md:h-[60vh] bg-cover bg-slate-50">
             <div className="flex flex-col items-start justify-center max-w-96">
                 <img src="/why_us.png" alt="wh us"/>
             </div>

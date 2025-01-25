@@ -32,7 +32,7 @@ const items = [
 
 const Service = () => {
     return (
-        <div className="mt-32 flex items-center justify-center gap-8 h-[50vh] md:h-[100vh] bg-cover bg-[url('/tra-map.png')]">
+        <div className="mt-40 flex items-center justify-center gap-8 h-[50vh] md:h-[100vh] bg-cover bg-[url('/tra-map.png')]">
             <div className="flex flex-col items-start justify-center max-w-96">
                 <p className='text-slate-400 font-bold text-lg tracking-wide mb-10'>{category}</p>
                 <p className='text-4xl font-bold mb-10'>{title}</p>
