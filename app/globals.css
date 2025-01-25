@@ -27,11 +27,12 @@ li.list-circle::marker {
 
 /*----------------------- Hero Section -------------------------*/
 .glowing-title {
-  text-shadow: 0 0 8px #fff, 0 0 12px #4fc3f7, 0 0 20px #4fc3f7;
+  text-shadow: 0 0 8px #ccc, 0 0 12px #bbb, 0 0 20px #aaa;
 }
 
 .glowing-subtitle {
   text-shadow: 0 0 10px #fff, 0 0 20px #ff6c6c, 0 0 30px #ff6c6c, 0 0 40px #ff6c6c;
+  /*text-shadow: 0 0 8px #fff, 0 0 12px #4fc3f7, 0 0 20px #4fc3f7;*/
 }
 
 .cta-button {

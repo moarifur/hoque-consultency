@@ -99,7 +99,7 @@ const ImageSlider = () => {
                 {items.map((item, index) => (
                     <SwiperSlide key={index}>
                         <Link href={item.link}>
-                            <div className="relative w-full h-96 bg-[center_top] border-8 border-amber-200 hover:border-purple-200">
+                            <div className="relative w-full h-96 bg-[center_top] border-4 border-purple-200  hover:border-amber-200">
                                 <img
                                     src={item.imgURL}
                                     alt={`Slide ${index + 1}`}

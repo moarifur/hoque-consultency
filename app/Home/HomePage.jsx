@@ -11,10 +11,10 @@ const HomePage = () => {
         <>
             <Welcome />
             <ImageSlider />
+            <WhyUs />
             <Service />
             <Aviation />
             <Iata />
-            <WhyUs />
             <GetStarted />
         </>
     );
