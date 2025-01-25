@@ -5,6 +5,7 @@ import Aviation from "@/app/Home/Aviation";
 import Iata from "@/app/Home/IATA";
 import GetStarted from "@/app/Home/GetStarted";
 import WhyUs from "@/app/Home/WhyUs";
+import Footer from "@/app/components/Footer";
 
 const HomePage = () => {
     return (
