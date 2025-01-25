@@ -6,7 +6,7 @@ const Welcome = () => {
                 <p className='text-3xl md:text-7xl font-extrabold text-slate-100'>Welcome to Hoque Consultancy</p>
                 <p className='mt-3 text-xl md:text-4xl glowing-title'>Your Trusted Partner for Global Success</p>
                 <p className='mt-5 p-5 text-wrap text-2xl max-w-[60%] glowing-subtitle'>
-                    Explore Your Dream Destination Below
+                    Click Below to Explore Your Dream Destination
                     {/*At Hoque Consultancy, we offer you tailored,*/}
                     {/*seamless visa and civil aviation solutions with*/}
                     {/*a commitment to excellence. Our 20+ years of*/}

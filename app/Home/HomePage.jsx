@@ -11,7 +11,7 @@ const HomePage = () => {
     return (
         <>
             <Welcome />
-            <ImageSlider />
+            <ImageSlider position='absolute' top='70%'/>
             <WhyUs />
             <Service />
             <Aviation />

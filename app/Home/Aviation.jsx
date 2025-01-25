@@ -1,8 +1,6 @@
+import Link from "next/link";
 
 /*------------------------ Aviation Data ---------------------------*/
-import Link from "next/link";
-import React from "react";
-
 const info = {
     title: 'Civil Aviation Consultancy Services',
     subtitle: 'Enhancing aviation operations with expert services!',
@@ -12,7 +10,7 @@ const info = {
 const data = [
     {
         title: 'Ground Handling',
-        subtitle: 'Efficient Ground Handling Services',
+        subtitle: 'Swift Ground Solutions',
         description: 'Precision-crafted ground handling for seamless aviation operations.',
         imgURL: '/light_signals.jpg'
     },
@@ -55,15 +53,16 @@ const Aviation = () => {
                         </div>
                     ))}
                 </div>
-                <Link href='/aviation'>
-                    <button
-                        className="cta-button px-32 py-4 bg-[#f67c93] rounded-lg font-semibold text-lg transform hover:scale-105 transition-transform duration-300">
-                        Learn more...
-                    </button>
-                </Link>
+                <a
+                    href='/docs/aviation.pdf'
+                    className="cta-button px-32 py-4 bg-[#f67c93] rounded-lg font-semibold text-lg transform hover:scale-105 transition-transform duration-300"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > Civil Aviation Application Process</a>
+
             </div>
         </div>
-    );
+);
 };
 
 export default Aviation;

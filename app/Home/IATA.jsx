@@ -27,19 +27,19 @@ const Iata = () => {
             <div className="max-w-96">
                 <p className='text-slate-500 font-bold text-lg tracking-wide mb-10'>{info.title}</p>
                 <p className='text-4xl font-bold mb-10 text-slate-800'>{info.subtitle}</p>
-                <ul className='text-neutral-700'>
+                <ul className='mb-16 text-neutral-700'>
                     {data.map((item, index) => (
                         <li key={index} className='list-circle'>
                             <span className='text-slate-700'>{item.title}</span>
                         </li>
                     ))}
                 </ul>
-                <Link href='/iata'>
-                    <button
-                        className="cta-button px-24 py-4 bg-[#f67c93] rounded-lg font-semibold text-lg transform hover:scale-105 transition-transform duration-300 text-white mt-10">
-                        Learn more...
-                    </button>
-                </Link>
+                <a
+                    href='/docs/IATA.pdf'
+                    className="px-8 py-4 bg-[#f67c93] rounded-lg font-semibold text-lg text-white"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                > IATA Licensing Requirements</a>
             </div>
         </div>
     );

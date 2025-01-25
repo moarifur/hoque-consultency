@@ -6,88 +6,16 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/autoplay';
-import Link from "next/link";
+import {countries} from "@/lib/data";
 
-/*-------------------------------- Hero data --------------------------------------*/
-const items = [
-    {
-        title: 'UK',
-        imgURL: 'uk.jpg',
-        flag: 'uk_flag.jpg',
-        link: '/uk'
-    },
-    {
-        title: 'Schengen',
-        imgURL: 'schengen.jpg',
-        flag: 'schengen_flag.jpg',
-        link: '/schengen'
-    },
-    {
-        title: 'China',
-        imgURL: 'china.jpg',
-        flag: 'china_flag.jpg',
-        link: '/china'
-    },
-    {
-        title: 'Indonesia',
-        imgURL: 'indonesia.jpg',
-        flag: 'indonesia_flag.jpg',
-        link: '/indonesia'
-    },
-    {
-        title: 'Philippine',
-        imgURL: 'philippine.jpg',
-        flag: 'philippine_flag.png',
-        link: '/philippine'
-    },
-    {
-        title: 'Malaysia',
-        imgURL: 'malaysia.jpg',
-        flag: 'malaysia_flag.jpg',
-        link: '/malaysia'
-    },
-    {
-        title: 'Myanmar',
-        imgURL: 'myanmar.jpg',
-        flag: 'myanmar_flag.png',
-        link: '/myanmar'
-    },
-    {
-        title: 'Nepal',
-        imgURL: 'nepal.jpg',
-        flag: 'nepal_flag.png',
-        link: '/nepal'
-    },
-    {
-        title: 'Australia',
-        imgURL: 'australia.jpg',
-        flag: 'australia_flag.png',
-        link: '/australia'
-    },
-    {
-        title: 'Singapore',
-        imgURL: 'singapore.jpg',
-        flag: 'singapore_flag.jpg',
-        link: '/singapore'
-    },
-    {
-        title: 'Vietnam',
-        imgURL: 'vietnam.jpg',
-        flag: 'vietnam_flag.png',
-        link: '/vietnam'
-    },
-    {
-        title: 'Thailand',
-        imgURL: 'thailand.jpg',
-        flag: 'thailand_flag.jpg',
-        link: '/thailand'
-    },
-];
-
-
-const ImageSlider = () => {
+const ImageSlider = (props) => {
     return (
-        <div className="absolute w-full top-[60%] md:top-[70%] z-10 p-10 mb-16">
+        <div
+            style={{
+                position: `${props.position}`,
+                top: `${props.top}`,
+            }}
+            className="w-full z-10 p-10 mb-16">
             <Swiper
                 modules={[Autoplay, Pagination]}
                 spaceBetween={30}
@@ -96,9 +24,9 @@ const ImageSlider = () => {
                 pagination={{ clickable: true }}
                 loop={true}
             >
-                {items.map((item, index) => (
+                {countries.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <Link href={item.link}>
+                        <a href={item.link} target="_blank" rel="noopener noreferrer">
                             <div className="relative w-full h-96 bg-[center_top] border-4 border-purple-200  hover:border-amber-200">
                                 <img
                                     src={item.imgURL}
@@ -112,7 +40,7 @@ const ImageSlider = () => {
                                     </div>
                                 </div>
                             </div>
-                        </Link>
+                        </a>
                     </SwiperSlide>
                 ))}
             </Swiper>
